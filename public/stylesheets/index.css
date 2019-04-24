@@ -9,9 +9,18 @@
 }
 
 #intro {
+    position: relative;
     border: 1px solid green;
 }
 
 #intro .jumbo {
-    border: 1px solid red;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+#intro .jumbo .jumbo-header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
