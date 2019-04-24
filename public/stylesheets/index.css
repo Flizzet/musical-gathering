@@ -1,0 +1,17 @@
+.rsvp-ribbon {
+    position: fixed;
+    background-color: var(--red);
+    top: 0px;
+    left: var(--defaultpadding);
+    width: 50px;
+    height: 120px;
+    border-bottom-right-radius: 10px;
+}
+
+#intro {
+    border: 1px solid green;
+}
+
+#intro .jumbo {
+    border: 1px solid red;
+}

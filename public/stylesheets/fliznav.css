@@ -1,0 +1,123 @@
+/* Fliznav object */
+.fliznav {
+    background-color: #1c2326;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: auto;
+    font-family: sans-serif;
+    display: flex;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Top & Bottom */
+.fliznav-fixed-top,
+.fliznav-fixed-bottom,
+.fliznav-top,
+.fliznav-fixed-top,
+.fliznav-bottom {
+    width: 100%;
+    height: 72px;
+    align-items: center;
+}
+.fliznav-fixed-bottom,
+.fliznav-fixed-top {
+    position: fixed;
+}
+.fliznav-fixed-top {
+    bottom: auto;
+    top: 0px;
+}
+.fliznav-fixed-bottom {
+    top: auto;
+    bottom: 0px;
+}
+
+/* Branding */
+.fliznav-brand {
+    color: white;
+    padding: 0px 1%;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.fliznav-light .fliznav-brand {
+    color: black;
+}
+
+/* Styling */
+.fliznav-light {
+    background-color: white;
+    color: black;
+}
+.fliznav-transparent {
+    background-color: transparent;
+}
+.fliznav.shadowed {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.fliznav-centered {
+    justify-content: center;
+}
+.fliznav-right {
+    justify-content: flex-end;
+}
+.fliznav-right .fliznav-brand {
+    order: 2;
+}
+
+/* Extra elements */
+.fliznav-separator {
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    height: 70%;
+    transform: translateX(50%);
+}
+.fliznav-light .fliznav-separator {
+    border-color: black;
+}
+.fliznav-separator.rounded {
+    border-radius: 50%;
+}
+
+/* Links */
+.fliznav-navitems {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px;
+    height: 100%;
+    margin: 0px 10px;
+}
+.fliznav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0px 10px;
+    text-decoration: none;
+    height: 100%;
+}
+.fliznav-link.active {
+    filter: brightness(0.7);
+    pointer-events: none;
+}
+.fliznavhover-underline .fliznav-link:hover {
+    transition: 0.15s;
+    box-shadow: inset 0px -3px 0px white;
+}
+.fliznav-light .fliznav-link {
+    color: black;
+}
+.fliznav-light .fliznav-link.active {
+    opacity: 0.6;
+}
+.fliznav-light .fliznavhover-underline .fliznav-link:hover {
+    transition: 0.15s;
+    box-shadow: inset 0px -3px 0px black;
+}

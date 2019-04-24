@@ -1,8 +1,25 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-a {
-  color: #00B7FF;
+body {
+    background-color: var(--lightgray);
+}
+
+.full-page {
+    min-height: 100vh;
+}
+.third-page {
+    min-height: 75vh;
+}
+.half-page {
+    min-height: 50vh;
+}
+.quarter-page {
+    min-height: 25vh;
+}
+
+.fliznav-link {
+    text-transform: uppercase;
 }
